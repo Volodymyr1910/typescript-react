@@ -1,0 +1,23 @@
+.ts_lesson_01_spanCounter {
+    color: red;
+    margin-top: 20px;
+}
+.ts_lesson_01_container{
+    display: flex;
+    justify-content: center;
+}
+
+.ts_lesson_01_btn{
+    margin: 15px;
+    border: 2px solid yellowgreen;
+    background-color: brown;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 20%;
+}
+.style.ts_lesson_01_container h1{
+    text-align: center;
+}
+.ts_lesson_01_container img{
+    width: 100%;
+}

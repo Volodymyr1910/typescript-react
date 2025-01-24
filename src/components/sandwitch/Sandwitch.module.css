@@ -1,0 +1,28 @@
+.Ts_lesson_01_container {
+  background-color: lightgray;
+  margin: 30px;
+  padding: 40px;
+}
+
+.sandwitch_container_btn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.sandwitch_btn {
+  border: none;
+  background-color: lightcyan;
+  border-radius: 10px;
+  padding: 20px;
+  color: black;
+}
+
+.sandwitch_container h2 {
+  text-align: center;
+}
+
+.sandwitch_container img {
+  width: 100%;
+}
