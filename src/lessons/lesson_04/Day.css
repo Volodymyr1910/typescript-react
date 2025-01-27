@@ -1,0 +1,22 @@
+
+.day {  width: 100vw; /* Ширина на весь екран */
+    height: 100vh; /* Висота на весь екран */
+    /* display: flex; 
+    justify-content: center;
+    align-items: center;  */
+    margin: 0; /* Відсутність відступів */
+    padding: 0; /* Відсутність полів */
+    box-sizing: border-box; /* Врахування меж */
+    background-color: #fff; color: #000; 
+} 
+.night { 
+     width: 100vw; /* Ширина на весь екран */
+    height: 100vh; /* Висота на весь екран */
+    /* display: flex; 
+    justify-content: center; 
+    align-items: center;  */
+    margin: 0; /* Відсутність відступів */
+    padding: 0; /* Відсутність полів */
+    box-sizing: border-box; /* Врахування меж */
+    background-color: #333; color: #fff; 
+}

@@ -1,0 +1,75 @@
+.lesson_05_mainContainer {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  grid-template-columns: repeat(auto-fill, minmax(530px, 1fr));
+  grid-auto-rows: 530px;
+  flex-wrap: wrap;
+  align-content: center;
+  row-gap: 30px;
+  background-color: rgb(179, 177, 177);
+}
+
+.lesson_05_heroCard h3:hover {
+  box-shadow: 0px 0px 30px 30px rgba(127, 255, 212, 0.5);
+  border-radius: 50% 5px;
+  border: 1px solid;
+}
+
+.lesson_05_light:hover {
+  border-color: rgb(99, 42, 165);
+  color: rgb(99, 42, 165);
+}
+.lesson_05_dark:hover {
+  border-color: brown;
+  color: brown;
+}
+
+.lesson_05_heroCard {
+  text-decoration: none;
+  color: rgb(247, 247, 247);
+  transition: transform 0.7s ease;
+  padding: 15px;
+}
+.lesson_05_heroCard:hover {
+  transform: scale(1.4);
+  color: aquamarine;
+  box-shadow: 0px 20px 30px rgba(127, 255, 212, 0.5);
+}
+
+.lesson_05_heroCard {
+  max-width: 480px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin: 6px;
+  padding: 10px 40px 10px;
+  background-color: rgba(0, 0, 0, 0.671);
+}
+.lesson_05_img_container {
+  height: 300px;
+  /* width: 180px; */
+  border-radius: 20%;
+  overflow: hidden;
+  /* border: 5px solid;
+  border-color: brown; */
+}
+
+.lesson_05_img_container > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.lesson_05_heroCard_light {
+  border: 5px solid;
+  border-color: rgb(99, 42, 165);
+}
+.lesson_05_heroCard_dark {
+  border: 5px solid;
+  border-color: brown;
+}

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+.HomeWork_02 {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: 350px;
+
+  display: flex;
+  grid-template-columns: repeat();
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-content: center;
+
+  padding: 20px;
+  border-radius: 5px;
+}
+#HomeWork_02_my_data {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-style: italic;
+  font-size: 20px;
+  color: rgb(62, 109, 180);
+  background-color: lightgray;
+}
+
+.HomeWork_02_divForImg {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border: 1px solid gray;
+}
+
+.HomeWork_02_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  padding: 5px; 
+}

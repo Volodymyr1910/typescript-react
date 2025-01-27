@@ -1,0 +1,75 @@
+.anketa {
+    
+    background-image: url("./nature_photo.jpg");
+    background-size: 100% 300%;
+    }
+    
+    
+    .homework2_h1{
+        margin:30% 10%;
+        padding: 10px;
+        text-align: center;
+        box-shadow: 30px -30px 60px  rgba(255, 255, 255, 0.5);
+    }
+    
+    .homework2_best {
+        color: #f3f3f3;
+    }
+    
+    .homework2_present{
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px; 
+        border: none;
+        cursor: pointer;
+        color:rgb(0, 8, 6)
+    }
+        
+    
+    .homework2_fun{
+        width: 30%;
+        border-radius: 5px;
+        padding: 5px 25px 5px 25px;
+        margin: 5px;
+        border: none;
+        cursor: pointer;
+        color:rgb(0, 8, 6)
+    }
+    
+    
+   .homework2_text_date_number{
+    
+        width: 100%;
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px;
+        border: none;
+        color:rgb(0, 8, 6)
+    }
+    
+   .homework2_color_reset{
+        width: 30%;
+        border-radius: 5px;
+        padding: 5px 5px 5px 5px; 
+        border: none;
+        cursor: pointer;
+    }
+    
+    
+    .homework2_button{
+        cursor: pointer;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        background-color: rgb(49, 231, 171);
+    }
+    
+    
+    .homework2_form{
+    width: 80%;
+     margin: -28% auto;
+    max-width: 400px;
+    padding: 20px;
+     border: 3px solid hwb(246 60% 13%);
+     border-radius: 20px; 
+    box-shadow: 30px -30px 60px  rgba(255, 255, 255, 0.5);
+    }
