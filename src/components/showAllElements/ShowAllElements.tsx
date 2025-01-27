@@ -44,7 +44,7 @@ export default function ShowAllElements({
                       <div className="showAllElements_item" key={key}>
                         <a
                           href={element.link}
-                          className="showAllElements_item_img_container"
+                          className="showAllElements_item_img_container" target="_blank"
                         >
                           <img
                             src={element.image || element.img}
