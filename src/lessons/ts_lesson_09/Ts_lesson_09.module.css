@@ -1,0 +1,26 @@
+.heading {
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+.desc {
+    font-style: italic;
+}
+
+/* такой селектор не удобен для module.css. В этом случае используют CamelCase => textOrange*/
+.text_orange {
+    color: orange;
+}
+
+.textOrange {
+    color: orange;
+}
+
+.list > li {
+    list-style: none;
+}
+
+/* добавляем кастомную замену точки для елементов списка */
+.list > li::before {
+    content: "⚡ ";
+}

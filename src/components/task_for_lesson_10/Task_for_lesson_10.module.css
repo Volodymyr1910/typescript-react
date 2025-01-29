@@ -1,0 +1,66 @@
+.mainContainer {
+  /* display: grid; */
+
+  display: flex;
+  flex-direction: column;
+
+  /* align-content: center;
+  grid-template-columns: repeat(1, 500px);
+    grid-auto-rows: auto;
+    
+    row-gap: 30px; 
+     column-gap: 20px;
+    */
+  /* gap: 30px; */
+
+  background-color: rgb(179, 177, 177);
+  padding: 0px;
+
+  width: 100%;
+  max-height: 700px;
+  /* flex-wrap: wrap;
+    align-content: center; */
+  overflow-y: auto;
+  scroll-behavior: smooth;
+}
+
+.catCard {
+  height: 100%;
+  width: 100%;
+
+  border: 3px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  padding: 10px;
+}
+@keyframes pulseGlow {
+    0% {
+      box-shadow: 0px 0px 10px 10px rgba(127, 255, 212, 0.212);
+    }
+    50% {
+      box-shadow: 0px 0px 30px 30px rgba(127, 255, 212, 0.5);
+    }
+    100% {
+      box-shadow: 0px 0px 10px 10px rgba(127, 255, 212, 0.212);
+    }
+  }
+.catCard:hover {
+  animation: pulseGlow 1.5s infinite alternate ease-in-out;
+  border-radius: 50% 5px;
+  border: 1px solid;
+  background-color: rgba(0, 0, 0, 0.658);
+}
+
+.imageWrapper {
+  height: 200px;
+}
+
+.imageWrapper > img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,28 @@
+.ButtonDima {
+    margin: 3px;
+    
+  }
+  
+  .primary:hover {
+    background-color: #03265A;
+  }
+
+  .primary{
+    background-color: #006cd0;
+  }
+
+  .danger{
+    background-color: #b4141c;
+  }
+
+  .danger:hover {
+    background-color: #8d0f15;
+  }
+
+  .disabled {
+    background-color: #ccc;
+    color: rgb(108, 108, 108);
+    cursor: not-allowed;
+  }
+
+  

@@ -1,10 +1,35 @@
-import "../myButton/MyButton.css"
+import styles from "./ButtonDima.module.css";
+import cn from "classnames";
 
 interface IMyButtonProps {
-    type:"submit" | "button" | "reset", text:string, func:()=>void
+  type: "submit" | "button" | "reset";
+  text?: string;
+  func: () => void;
+  // активна кнопка или нет
+  disabled?: boolean;
+  // варианты цвета кнопки
+  colorVariant?: "primary" | "danger";
 }
-// пример отдельного компонента кнопки.
-function MyButton ({type, text="click",func}:IMyButtonProps):JSX.Element{
-    return  <button type={type} onClick={func} className="myButton">{text}</button>;
+
+function ButtonDima({
+  type,
+  text = "click",
+  func,
+  disabled = false,
+  colorVariant,
+}: IMyButtonProps): JSX.Element {
+  return (
+    <button
+      type={type}
+      onClick={func}
+      className={cn(styles.ButtonDima, {
+        [styles.primary]: colorVariant === "primary",
+        [styles.danger]: colorVariant === "danger",
+        [styles.disabled]: disabled === true,
+      })}
+    >
+      {text}
+    </button>
+  );
 }
-export default MyButton;
+export default ButtonDima;
