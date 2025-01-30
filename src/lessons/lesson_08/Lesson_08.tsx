@@ -6,17 +6,11 @@ import Lesson_05 from "../lesson_05/Lesson_05";
 
 
 
+  export default function Lesson_08(): JSX.Element {
 
+    //! при каждом ре-рендеринге реакт считывает заново весь код в теле функции Lesson_08
 
-
-
-  
-
-  export default function Ts_lesson_03(): JSX.Element {
-
-    //! при каждом ре-рендеринге реакт считывает заново весь код в теле функции Ts_lesson_03
-
-    // изменения переменных состояния приведет к обновления и перерендру компонента Lesson08
+    // изменения переменных состояния приведет к обновления и перерендеру компонента Lesson08
     const [count, setCount] = useState<number>(0);
     const [dog, setDog] = useState<string>('');
     const [toggle, setToggle] = useState<boolean>(false);

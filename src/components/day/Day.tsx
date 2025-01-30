@@ -1,5 +1,5 @@
 import { useState } from "react"
-import "../lesson_04/Day.css"
+import "./Day.css"
 
 
 

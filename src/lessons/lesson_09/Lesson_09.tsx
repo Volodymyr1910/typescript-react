@@ -2,9 +2,9 @@
 // import FetchFox from "../../components/fetchFox/FetchFox";
 
 import ButtonDima from "../../components/buttonDima/ButtonDima"
-import styles from "./Ts_lesson_09.module.css"
+import styles from "./Lesson_09.module.css"
 
-export default function Ts_lesson_09() : JSX.Element {
+export default function Lesson_09() : JSX.Element {
    
 
 

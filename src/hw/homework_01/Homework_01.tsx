@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ShowAllElements from "../../components/showAllElements/ShowAllElements";
 
 
-export default function Ts_homework_04() :JSX.Element{
+export default function Homework_01() :JSX.Element{
     interface IfoxLibrary {image:string, link:string}
 
     const [counter, setCounter] = useState<number>(0);

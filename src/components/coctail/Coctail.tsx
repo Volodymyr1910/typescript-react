@@ -1,47 +1,38 @@
 import { useEffect, useState } from "react";
 import style from "./Coctail.module.css"
 
-interface ICoctail {
-  name: string;
-  image: string;
-}
-
 export default function Coctail(): JSX.Element {
-  const [myCoctails, setMyCoctails] = useState<ICoctail[]>([]);
+  const [name, setName] = useState<string>('');
+  const [image, setImage] = useState<string>('');
 
-  async function getCoctail(): Promise<void> {
-    try {
-      const res = await fetch(
-        "https://www.thecocktaildb.com/api/json/v1/1/random.php"
-      );
-      const data = await res.json();
-
-      if (data.drinks && data.drinks[0]) {
-        const { strDrink: name, strDrinkThumb: image } = data.drinks[0];
-
-        setMyCoctails((prev) => [...prev, { name, image }]);
-      } else {
-        console.error("Invalid data format:", data);
-      }
-    } catch (error) {
-      console.error("Failed to fetch cocktail...", error);
-    }
+  async function loadCocktail(): Promise<void> {
+    const res = await fetch('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+    const obj = await res.json();
+    const { drinks } = obj;
+    const { strDrink, strDrinkThumb } = drinks[0];
+    setName(strDrink);
+    setImage(strDrinkThumb);
   }
-
   useEffect(() => {
-    getCoctail();
+    loadCocktail();
   }, []);
+
+      // pending - ожидание
+      // fullfilled - выполненный - вы получили значение
+      // rejected - отвергнуть - отклонен - ошибка без значения
+      // раскрывает Promise от fetch
+
+      // раскрывает Promise от асинхронного метода json()
+
+        // поэтапно выводите в консоль
 
   return (
     <div className={style.container}>
-      {myCoctails.length > 0 ? (
-        <>
-          <h2>{myCoctails[0].name}</h2>
-          <img src={myCoctails[0].image} alt="cocktail" />
-        </>
-      ) : (
-        <p>No data...</p>
-      )}
+      <h1>Cocktail: {name}</h1>
+      <img src={image} alt="" />
+      <button className={style.btn} type="button" onClick={() => loadCocktail()}>
+        Next image
+      </button>
     </div>
   );
 }
