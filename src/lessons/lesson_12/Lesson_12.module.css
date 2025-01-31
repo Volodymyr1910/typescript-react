@@ -1,0 +1,15 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 250px;
+}
+
+.form > input{
+    margin-bottom: 5px;
+    padding: 6px;
+}
+
+.formGuide {
+    width: 400px;
+}

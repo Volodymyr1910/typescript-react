@@ -1,0 +1,73 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    /* min-height: 300px; */
+    background-color: grey;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+
+.inputZone {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form > input {
+    border-radius: 5px;
+    background-color: rgba(127, 255, 212, 0.486);
+
+}
+.form > button {
+    width: 120px;
+    background-color: green;
+    border-color: aquamarine;
+}
+
+.outputZoneItemContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+   
+    max-height: 500px;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+}
+.outputZoneItemContainer > h3 {
+    color: rgb(223, 115, 115);
+}
+.clearbtn{
+    color: rgb(223, 115, 115);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.outputZoneItem {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+     gap: 5px;
+     flex-wrap: wrap;
+     align-content: center;
+}
+
+.customer {
+    background-color: rosybrown;
+    border: 1px solid red;
+    padding: 0px 4px;
+    border-radius: 10px;
+}

@@ -3,9 +3,9 @@ import { HashRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Layout from "./layout/Layout";
 import Lesson_05 from "./lessons/lesson_05/Lesson_05";
-import LoginForm_v2 from "./components/loginForm_v2/LoginForm_v2";
-import FetchFox from "./components/fetchFox/FetchFox";
-import Ts_lesson_03 from "./lessons/lesson_08/Lesson_08";
+// import LoginForm_v2 from "./components/loginForm_v2/LoginForm_v2";
+// import FetchFox from "./components/fetchFox/FetchFox";
+// import Ts_lesson_03 from "./lessons/lesson_08/Lesson_08";
 import NoPage from "./components/noPage/NoPage";
 import Lesson_02 from "./lessons/lesson_02/Lesson_02";
 import Lesson_04 from "./lessons/lesson_04/Lesson_04";
@@ -31,6 +31,7 @@ import Homework_09 from "./hw/homework_09/Homework_09";
 import Homework_10 from "./hw/homework_10/Homework_10";
 import Homework_11 from "./hw/homework_11/Homework_11";
 import Homework_12 from "./hw/homework_12/Homework_12";
+import Lesson_12 from "./lessons/lesson_12/Lesson_12";
 // import Ts_lesson_11 from "./lessons/ts_lesson_11/Ts_lesson_11";
 // import Ts_lesson_10 from "./lessons/ts_lesson_10/Ts_lesson_10";
 // import Bitcoin from "./components/bitcoin/Bitcoin";
@@ -82,6 +83,7 @@ function App(): JSX.Element {
         <Route path="lesson-9" element={<Lesson_09/>}/>
         <Route path="lesson-10" element={<Lesson_10/>}/>
         <Route path="lesson-11" element={<Lesson_11/>}/>
+        <Route path="lesson-12" element={<Lesson_12 text="Бібліотека Formik"/>}/>
 
         
         <Route path="homeworks" element={<Home_works/>}/>
@@ -100,10 +102,10 @@ function App(): JSX.Element {
         <Route path="homework-12" element={<Homework_12/>}/>
 
 
-        <Route path="login-form" element={<LoginForm_v2/>}/>
+        {/* <Route path="login-form" element={<LoginForm_v2/>}/>
         <Route path="fetch-fox" element={<FetchFox/>}/>
         <Route path="lesson-08" element={<Ts_lesson_03/>}/>
-        <Route path="lesson-05" element={<Lesson_05/>}/>
+        <Route path="lesson-05" element={<Lesson_05/>}/> */}
 
        
         
