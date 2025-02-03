@@ -17,6 +17,8 @@ export default function Home_works() {
         <Link to="/homework-10"><div>Home work 10: ProfileCard - форма для вводу данних (не допрацьована)</div></Link>
         <Link to="/homework-11"><div>Home work 11: ProfilCardforHW - приклад рендерингу об'єктів</div></Link>
         <Link to="/homework-12"><div>Home work 12: UserCard - приклад логіки при рендерингу компонента з опціональними props</div></Link>
+        <Link to="/homework-13"><div>Home work 13: Formik + Yup - заповнення он-лайн форми, збереження інформації і рендер даних на сторінці</div></Link>
+
         <Link to="/"><div>Home work 13</div></Link>
         <Link to="/"><div>Home work 14</div></Link>
 

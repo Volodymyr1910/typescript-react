@@ -32,6 +32,8 @@ import Homework_10 from "./hw/homework_10/Homework_10";
 import Homework_11 from "./hw/homework_11/Homework_11";
 import Homework_12 from "./hw/homework_12/Homework_12";
 import Lesson_12 from "./lessons/lesson_12/Lesson_12";
+import Lesson_13 from "./lessons/lesson_13/Lesson_13";
+import Homework_13 from "./hw/homework_13/Homework_13";
 // import Ts_lesson_11 from "./lessons/ts_lesson_11/Ts_lesson_11";
 // import Ts_lesson_10 from "./lessons/ts_lesson_10/Ts_lesson_10";
 // import Bitcoin from "./components/bitcoin/Bitcoin";
@@ -84,6 +86,7 @@ function App(): JSX.Element {
         <Route path="lesson-10" element={<Lesson_10/>}/>
         <Route path="lesson-11" element={<Lesson_11/>}/>
         <Route path="lesson-12" element={<Lesson_12 text="Бібліотека Formik"/>}/>
+        <Route path="lesson-13" element={<Lesson_13/>}/>
 
         
         <Route path="homeworks" element={<Home_works/>}/>
@@ -100,6 +103,7 @@ function App(): JSX.Element {
         <Route path="homework-10" element={<Homework_10/>}/>
         <Route path="homework-11" element={<Homework_11/>}/>
         <Route path="homework-12" element={<Homework_12/>}/>
+        <Route path="homework-13" element={<Homework_13/>}/>
 
 
         {/* <Route path="login-form" element={<LoginForm_v2/>}/>
