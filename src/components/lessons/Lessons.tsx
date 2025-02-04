@@ -21,6 +21,7 @@ export default function Lessons() {
     <Link to="/lesson-11"><div>Lesson 11: Bitcoin; UsersPage - рендер даних з fetch-запиту, у вигляді списку</div> </Link>
     <Link to="/lesson-12"><div>Lesson12: FormGender - бібліотека Formik - запов онлайн-форми, збереж данних в масив і рендер на сторінці із логікою + SCROLL</div> </Link>
     <Link to="/lesson-13"><div>Lesson 13: GenderForm - запов онлайн-форми, збереж данних в об'єкт і рендер на стор. Валідація даних в формі за доп бібліотеки Yup </div> </Link>
+    <Link to="/lesson-14"><div>Lesson 14: Products; ProductCard; ProductPage - динамічний рендеринг даних, отриманих з fetch-запиту </div> </Link>
 
    
     <Link to="/lesson-14"><div>Lesson </div> </Link>
