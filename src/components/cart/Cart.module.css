@@ -39,6 +39,7 @@
 .title {
     min-width: 45%;
     margin-left: 5px;
+    color: aliceblue;
 }
 .plus {
   margin-left: 5px;
@@ -55,11 +56,13 @@
 
 .quantity {
   margin: 5px;
+  color: aliceblue;
 }
 
 .remove {
   height: 40px;
   background-color: rgb(194, 106, 33);
+  color: aliceblue;
 }
 
 .purchase {
