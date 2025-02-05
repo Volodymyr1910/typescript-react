@@ -16,7 +16,7 @@ export default function Cart(): JSX.Element {
       )
     );
     const foundElement = cart.find((element) => element.id === id);
-    if (foundElement) setTotalCost((prev) => prev - foundElement.price);
+    if (foundElement && foundElement.quantity > 1) setTotalCost((prev) => prev - foundElement.price);
   }
 
   function handlePlus(id: number): void {
