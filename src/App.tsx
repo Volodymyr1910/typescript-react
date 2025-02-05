@@ -36,6 +36,12 @@ import Lesson_13 from "./lessons/lesson_13/Lesson_13";
 import Homework_13 from "./hw/homework_13/Homework_13";
 import Lesson_14 from "./lessons/lesson_14/Lesson_14";
 import ProductPage from "./components/productPage/ProductPage";
+import Lesson_15 from "./lessons/lesson_15/Lesson_15";
+import { CartContext, CartProvider } from "./context/CartContext";
+import Cart from "./components/cart/Cart";
+import Products from "./components/products/Products";
+import { ThemeProvider } from "./context/ThemeContext";
+import ThemeToggle from "./components/themeToggle/ThemeToggle";
 // import Ts_lesson_11 from "./lessons/ts_lesson_11/Ts_lesson_11";
 // import Ts_lesson_10 from "./lessons/ts_lesson_10/Ts_lesson_10";
 // import Bitcoin from "./components/bitcoin/Bitcoin";
@@ -49,12 +55,17 @@ import ProductPage from "./components/productPage/ProductPage";
 // import Lesson_02 from "./lessons/lesson_02/Lesson_02";
 // import Ts_lesson_01 from "./lessons/ts_lesson_01/ts_lesson_01";
 
+
+
 function App(): JSX.Element {
   return (
-    //! настройка роутинга
-     //? step 1  устанавливаем библиотеку через терминал (npm i react-router-dom)
-    //? step 2 оборачиваем все приложение в HashRouter (сделать импорт если не сработал автоматически => import { HashRouter } from "react-router-dom";)
-    
+    <ThemeProvider>
+    <CartProvider>
+    {/* //! настройка роутинга 
+    */}
+    {/* //? step 1  устанавливаем библиотеку через терминал (npm i react-router-dom)
+        //? step 2 оборачиваем все приложение в HashRouter (сделать импорт если не сработал автоматически => import { HashRouter } from "react-router-dom";) 
+    */}
     <HashRouter>
 
     {/* // ? step 3 оборачиваем все приложение в Routes - пути вокруг всех компонентов (сделать импорт если не сработал автоматически => import { HashRouter, Routes } from "react-router-dom";) */}
@@ -76,6 +87,11 @@ function App(): JSX.Element {
         
         <Route path="lessons" element={<Lessons/>}/>
 
+        <Route path="cart" element={<Cart/>}/>
+        <Route path="product" element={<Products/>}/>
+        <Route path="product/:id" element={<ProductPage/>}/>
+        <Route path="themeToggle" element={<ThemeToggle/>}/>
+
         <Route path="lesson-1" element={<Lesson_01/>}/>
         <Route path="lesson-2" element={<Lesson_02/>}/>
         <Route path="lesson-3" element={<Lesson_03/>}/>
@@ -91,6 +107,7 @@ function App(): JSX.Element {
         <Route path="lesson-13" element={<Lesson_13/>}/>
         <Route path="lesson-14" element={<Lesson_14/>}/>
         <Route path="lesson-14/:id" element={<ProductPage/>}/>
+        <Route path="lesson-15" element={<Lesson_15/>}/>
 
         
         <Route path="homeworks" element={<Home_works/>}/>
@@ -156,7 +173,8 @@ function App(): JSX.Element {
 
      
 
-
+    </CartProvider>
+    </ThemeProvider>
   );
 }
 

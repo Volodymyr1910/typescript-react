@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer"
 import Header from "../components/header/Header"
 
 export default function Layout() {
-  const headerElements = [{text:"Home 🏠", path:"/"}, {text:"Lessons", path:"lessons"}, {text:"Homeworks", path:"homeworks"}]
+  const headerElements = [{text:"Home 🏠", path:"/"}, {text:"Lessons", path:"lessons"}, {text:"Homeworks", path:"homeworks"}, {text:"cart", path:"cart"}, {text:"Products", path:"product"}, {text:"Перемикач теми", path:"themeToggle"}]
   return (
     <>
    

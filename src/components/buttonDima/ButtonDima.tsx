@@ -2,7 +2,7 @@ import styles from "./ButtonDima.module.css";
 import cn from "classnames";
 
 interface IMyButtonProps {
-  type: "submit" | "button" | "reset";
+  type?: "submit" | "button" | "reset";
   text?: string;
   func: () => void;
   // активна кнопка или нет
